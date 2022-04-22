@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Javascript Basics</title>
+    </head>
+
+
+
+    <boxy>
+        <script>
+            let userName = prompt("Who's there?", '');
+
+            if (userName === 'Admin')  {
+                let pass = prompt("What's the password?", '');
+
+                if (pass === 'TheMaster') {
+                    alert( 'Welcome!');                    
+                } else if (pass === '' || pass === null) {
+                    alert( 'Canceled' );
+                } else {
+                    alert ( 'Wrong Password' );
+                }
+
+            } else if (userName === '' || userName === null) {
+                alert( 'Canceled' );                
+            } else {
+                alert( "I don't know you!" )
+            }
+            
+            
+            let answer = prompt('What is the "official" name of JavaScript?', '');
+
+            if (answer === 'ECMAScript') {
+                alert( 'Right!' );
+            } else {
+                alert( "You don't know? ECMAScript!")
+            }
+
+
+            let number = prompt('Pick a number', '');
+
+            if (number > 0) {
+                alert(1);
+            } else if (number < 0) {
+                alert(-1);
+            } else {
+                alert(0);
+            }
+
+            // rewrite 'if' into '?'
+            let result = (a + b < 4) ? 'Below' : 'Over';
+            
+
+            // rewrite 'if' into '?'
+            
+            let message = (login == 'Employee') ? 'Hello':
+            (login == 'Director') ? 'Greetings':
+            (login == '') ? 'No login':
+            '';
+            
+
+
+
+
+
+        </script>
+
+
+
+
+    </boxy>
+</html>
